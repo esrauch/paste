@@ -1,5 +1,11 @@
 A maintained fork of Paste, which has zero changes from the upstream.
 
+
+```toml
+[dependencies]
+paste = { package = "paste-complete", version = "1.0" }
+```
+
 # Context 
 
 Paste has been declared "complete" by its author (dtolnay), and he announced the intent not to make any further changes for that reason.
@@ -10,7 +16,7 @@ However, this RUSTSEC advisory is problematic in two key ways:
 
 1. It actively drives users to Pastey just to "fix" the advisory. But, realistically the chance of a either accidental regressions in new releases, or supply chain attacks being pushed via Pastey is several orders of magnitude higher than the risk of any security issues in Paste being discovered going forward.
 
-2. It causes noise when people investigate and nearly always arrive at the conclusion that they sholud denylist the RUSTSEC (or else to artifically migrate off of it).
+3. It causes noise when people investigate and nearly always arrive at the conclusion that they sholud denylist the RUSTSEC (or else to artifically migrate off of it).
 
 Example issues of this noise include:
 
